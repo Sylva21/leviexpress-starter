@@ -2,15 +2,13 @@ import React from 'react';
 import { Footer } from '../Footer';
 import { Header } from '../Header';
 import { Home } from '../Home';
-import { Reservation } from '../Reservation';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 export const App = () => (
   <BrowserRouter>
     <Header />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/reservation" element={<Reservation />} />
+      <Route path="/reservation" element={<h2>AHOJ</h2>} />
       <Route
         path="*"
         element={
